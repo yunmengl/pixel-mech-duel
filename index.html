@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIXEL MECH DUEL · 像素风机甲对战</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="arcade">
+    <header class="topline">
+      <div class="brand">
+        <span class="led"></span>
+        <span>PIXEL MECH ARENA</span>
+      </div>
+      <div class="rev">NEON FOUNDRY <b>//</b> REV 0.1</div>
+    </header>
+
+    <section class="screen-shell" aria-label="游戏画面">
+      <div class="screen">
+        <canvas id="game" width="640" height="360" aria-label="像素风机甲对战游戏画面"></canvas>
+        <div class="crt" aria-hidden="true"></div>
+      </div>
+      <div class="shell-screw a"></div>
+      <div class="shell-screw b"></div>
+      <div class="shell-screw c"></div>
+      <div class="shell-screw d"></div>
+    </section>
+
+    <section class="controls" aria-label="操作说明">
+      <div class="ctrl-card p1">
+        <div class="ctrl-title"><span class="tag">P1</span> AZURE-01</div>
+        <div class="keys">
+          <span class="key">A</span><span class="key">D</span><span class="cap">移动</span>
+          <span class="key">W</span><span class="cap">跳跃</span>
+          <span class="key">J</span><span class="cap">攻击</span>
+          <span class="key">K</span><span class="cap">防御</span>
+        </div>
+      </div>
+      <div class="ctrl-card p2">
+        <div class="ctrl-title"><span class="tag">P2</span> CRIMSON-02</div>
+        <div class="keys">
+          <span class="key">←</span><span class="key">→</span><span class="cap">移动</span>
+          <span class="key">↑</span><span class="cap">跳跃</span>
+          <span class="key wide">ENTER</span><span class="cap">攻击</span>
+          <span class="key wide">R-SHIFT</span><span class="cap">防御</span>
+        </div>
+      </div>
+      <div class="ctrl-card rules">
+        <div class="ctrl-title"><span class="tag gold">RULE</span> 胜负规则</div>
+        <ul>
+          <li>三局两胜，每局 60 秒</li>
+          <li>防御会消耗护盾能量，破防将短暂硬直</li>
+          <li><span class="key small">ESC</span> 暂停 · <span class="key small">M</span> 静音 · <span class="key small">R</span> 再战</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/font.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/mech.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
